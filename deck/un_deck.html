@@ -50,7 +50,7 @@
     <!-- Begin slides. Just make elements with a class of slide. -->
 
     <section class="bg-img01 slide">
-          <div id="chart-1" class="chart vcenter">
+          <div id="my-chart" class="chart vcenter">
           </div>
     </section>
 
@@ -130,17 +130,54 @@
 <script type="text/javascript" src="popily/popily-geo.js"></script>
 
 <script>
-    popily.api.setToken('d39c69f05c5fae5cbcbe6a3b6ebac693c6ffb807');
+    popily.api.setToken('f2f877f72ff511319fda3e1884a0df256b2eebf4');
 </script>
 
 <script>
-    var insightOptions = {
-        source: 'superstore-sales-csv-5',
-        columns: ['Sales'],
-        calculation: 'count'
-    };
-
-    popily.chart.getAndRender('#chart-1', insightOptions);
+var options = {
+ "title": "Comment Sentiment",
+ "height": 400,
+ "includeAnalysis": true,
+ "includeDescription": true,
+ "chartType": "scatterplot",
+ "xColumn": "Comment Sentiment",
+ "chartFontColor": "#fff",
+ "yGrid": true,
+ "skipAnimation": false,
+ "legend": true,
+ "xRotation": 45,
+ "xAxis": false,
+ "yAxis": true,
+ "formatters": [],
+ "hideColumns": [],
+ "tooltip": true,
+ "colors": [
+  "#5DA5DA",
+  "#FAA43A",
+  "#60BD68",
+  "#F17CB0",
+  "#B2912F",
+  "#B276B2",
+  "#DECF3F",
+  "#F15854"
+ ],
+ "columns": [
+  "Comment Sentiment",
+  "Comment Length"
+ ],
+ "source": 246,
+ "calculations": [
+  {
+   "column": "Comment Sentiment",
+   "calculation": "comparison"
+  },
+  {
+   "column": "Comment Length",
+   "calculation": "comparison"
+  }
+ ]
+}
+popily.chart.getAndRender('#my-chart', options);
 </script>
 <!-- Initialize the deck. You can put this in an external file if desired. -->
 <script>
