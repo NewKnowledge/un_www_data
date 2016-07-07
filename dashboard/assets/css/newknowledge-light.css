@@ -1,0 +1,49 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #25313b;
+    color: #fff;
+}
+
+.navbar-brand {
+  padding: 0px; /* firefox bug fix */
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 12px; /* firefox bug fix */
+  width: auto;
+}
+
+.navbar-inverse {
+    background-color: #444;
+    border-bottom: none;
+}
+
+.navbar{
+    background-color: #212d37;
+}
+
+.panel {
+    margin-bottom: 20px;
+    background-color: rgba(0,0,0,.08);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.c3 path, .c3 line {
+    fill: none;
+    stroke: #414951;
+}
+
+h2 {
+    font-weight: bold;
+    color: #fff;
+}
+
+.index-page {
+    background-image: url(../images/02.jpg);
+    content: "";
+    opacity: 0.09;
+    background-size: cover;
+}

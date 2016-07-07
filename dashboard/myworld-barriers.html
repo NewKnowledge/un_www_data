@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>New Knowledge Analysis</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Popily stylesheet for styling the analytics -->
+    <link href="assets/css/popily.css" rel="stylesheet" />
+
+
+    <link href="assets/css/newknowledge-light.css" rel="stylesheet" />
+
+    <!-- Load the popily.js files -->
+    <script type="text/javascript" src="assets/js/popily.js"></script>
+    <script type="text/javascript" src="assets/js/popily-geo.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" rel="home" href="index.html" title="New Knowledge">
+                    <img src="assets/images/logo-white.svg">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My World 2016 <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="myworld-barriers.html">Barriers</a></li>
+                        <li><a href="myworld-support.html">Support</a></li>
+<li><a href="government-progress.html">Government Progress</a></li>
+                        <li><a href="myworld-payequity.html">Pay Equity</a></li>
+                        <li><a href="myworld-personalexperiences.html">Personal Experiences</a></li>
+                        <li><a href="myworld-demographics.html">Demographics</a></li>
+                      </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">U-Report <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="ureport-barriers.html">Barriers</a></li>
+                        <li><a href="ureport-barriers-region.html">Barriers By Region</a></li>
+                        <li><a href="ureport-barriers-income.html">Barriers By Income</a></li>
+                        <li><a href="ureport-support.html">Actions</a></li>
+                        <li><a href="ureport-actions-region.html">Actions By Region</a></li>
+                        <li><a href="ureport-actions-income.html">Actions By Income</a></li>
+                        <li><a href="ureport-payequity.html">Pay Equity</a></li>
+                      </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <!-- Start Row -->
+        <div class='row'>
+            <div class='col-sm-12'>
+                <h2>My World Barriers To Women Economic Empowerment</h2>
+            </div>
+        </div>
+        <!-- End Row -->
+
+        <!-- Start Row -->
+        <div class='row'>
+            <!-- Start Chart -->
+            <div class='col-sm-12'>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div id="chart-5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Chart -->
+        </div>
+        <!-- End Row -->
+
+        <!-- Start Row -->
+        <div class='row'>
+            <!-- Start Chart -->
+            <div class='col-sm-6'>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div id="chart-1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Chart -->
+
+            <!-- End Chart -->
+            <div class='col-sm-6'>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div id="chart-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Chart -->
+        </div>
+        <!-- End Row -->
+
+        <!-- Start Row -->
+        <div class='row'>
+            <!-- Start Chart -->
+            <div class='col-sm-8'>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div id="chart-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Chart -->
+
+            <!-- End Chart -->
+            <div class='col-sm-4'>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div id="chart-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Chart -->
+        </div>
+        <!-- End Row -->
+
+
+
+        <!-- Start Row -->
+        <div class='row'>
+            <!-- Start Chart -->
+            <div class='col-sm-12'>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div id="chart-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Chart -->
+        </div>
+        <!-- End Row -->
+
+        <!-- Start Row -->
+        <div class='row'>
+            <!-- Start Chart -->
+            <div class='col-sm-4'>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div id="chart-7">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Chart -->
+            <div class='col-sm-4'>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div id="chart-8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='col-sm-4'>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div id="chart-9">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Chart -->
+        </div>
+        <!-- End Row -->
+
+    </div>
+    <!-- /container -->
+
+    <script type="text/javascript" src="popily/popily.js"></script>
+    <script type="text/javascript" src="popily/popily-geo.js"></script>
+
+    <script>
+        popily.api.setToken('f2f877f72ff511319fda3e1884a0df256b2eebf4');
+    </script>
+
+    <script>
+        popily.api.setURL('https://staging.popily.com')
+    </script>
+
+    <script>
+        var options = {
+            "title": "Fear Of Violence Is A Barrier By Gender",
+            "height": 300,
+            "includeAnalysis": true,
+            "includeDescription": false,
+            "rotated": true,
+            "chartType": "barStacked",
+            "groupByColumn": "Gender",
+            "titleFontColor": "#fff",
+            "chartFontColor": "#fff",
+            "yLabel": "Number of Respondents",
+            "yGrid": false,
+            "skipAnimation": false,
+            "legend": true,
+            "xRotation": 1,
+            "yRotation": 90,
+            "xAxis": true,
+            "yAxis": true,
+            "formatters": [],
+            "hideColumns": [],
+            "tooltip": true,
+            "colors": ['#3498db','#f1c40f','#f03b20'],
+            "columns": [
+                "Fear Of Violence Is A Barrier",
+                "Gender"
+            ],
+            "source": 267
+        }
+        popily.chart.getAndRender('#chart-1', options);
+    </script>
+
+    <script>
+        var options = {
+            "title": "Traditional Views Of Women Are A Barrier By Gender",
+            "height": 300,
+            "includeAnalysis": true,
+            "includeDescription": false,
+            "rotated": true,
+            "chartType": "barStacked",
+            "groupByColumn": "Gender",
+            "titleFontColor": "#fff",
+            "chartFontColor": "#fff",
+            "yLabel": "Number of Respondents",
+            "yGrid": false,
+            "skipAnimation": false,
+            "legend": true,
+            "xRotation": 1,
+            "yRotation": 90,
+            "xAxis": true,
+            "yAxis": true,
+            "formatters": [],
+            "hideColumns": [],
+            "tooltip": true,
+            "colors": ['#3498db','#f1c40f','#f03b20'],
+            "columns": [
+                "Traditional Views Of Women Are A Barrier",
+                "Gender"
+            ],
+            "source": 267
+        }
+        popily.chart.getAndRender('#chart-2', options);
+    </script>
+    <script>
+        var options = {
+            "title": "Lack Of ICT Access Is A Barrier By Gender",
+            "height": 300,
+            "includeAnalysis": true,
+            "includeDescription": false,
+            "chartType": "barStacked",
+            "groupByColumn": "Gender",
+            "titleFontColor": "#fff",
+            "chartFontColor": "#fff",
+            "rotated": true,
+            "yLabel": "Number of Respondents",
+            "yGrid": false,
+            "skipAnimation": false,
+            "legend": true,
+            "xRotation": 1,
+            "yRotation": 90,
+            "xAxis": true,
+            "yAxis": true,
+            "formatters": [],
+            "hideColumns": [],
+            "tooltip": true,
+            "colors": ['#3498db','#f1c40f','#f03b20'],
+            "columns": [
+                "Lack Of ICT Access Is A Barrier",
+                "Gender"
+            ],
+            "source": 267
+        }
+        popily.chart.getAndRender('#chart-3', options);
+    </script>
+
+    <script>
+    var options = {
+     "title": "Strength Of Belief That Government Is Helping Women by Gender",
+     "height": 300,
+     "includeAnalysis": true,
+     "includeDescription": false,
+     "rotated": false,
+     "chartType": "bar",
+     "titleFontColor": "#fff",
+     "chartFontColor": "#fff",
+     "yGrid": false,
+     "yLabel": "Strength Of Belief (0 to 5)",
+     "skipAnimation": false,
+     "legend": false,
+     "xRotation": 45,
+     "xAxis": true,
+     "yAxis": true,
+     "formatters": [],
+     "hideColumns": [],
+     "tooltip": true,
+     "colors": ['#3498db','#f1c40f','#f03b20'],
+     "columns": [
+      "Gender",
+      "Strength Of Belief That Government Is Helping Women"
+     ],
+     "source": 267,
+     "calculations": [
+      {
+       "column": "Strength Of Belief That Government Is Helping Women",
+       "calculation": "average"
+      },
+      {
+       "column": "Age",
+       "calculation": "average"
+      }
+     ]
+    }
+    popily.chart.getAndRender('#chart-4', options);
+
+    </script>
+
+    <script>
+    var options = {
+     "title": "What Are Barriers To Women?",
+     "height": 400,
+     "includeAnalysis": false,
+     "includeDescription": false,
+     "rotated": false,
+     "chartType": "bubble",
+     "chartFontColor": "#fff",
+     "yGrid": true,
+     "skipAnimation": false,
+     "legend": true,
+     "xRotation": 45,
+     "xAxis": true,
+     "yAxis": true,
+     "formatters": [],
+     "hideColumns": [],
+     "tooltip": true,
+     "colors": [
+      "#F2671F",
+      "#C91B26",
+      "#9C0F5F",
+      "#60047A",
+      "#160A47",
+     ],
+     "columns": [
+      "What Are Barriers To Women?"
+     ],
+     "source": 271
+    }
+    popily.chart.getAndRender('#chart-5', options);
+    </script>
+
+    <script>
+        var options = {
+            "title": "Family Responsibilities Are A Barrier By Education",
+            "height": 400,
+            "includeAnalysis": true,
+            "includeDescription": false,
+            "chartType": "barGrouped",
+            "xLabel": "",
+            "yLabel": "Respondents",
+            "titleFontColor": "#fff",
+            "chartFontColor": "#fff",
+            "yGrid": false,
+            "rotated": true,
+            "skipAnimation": false,
+            "legend": true,
+            "xRotation": 0,
+            "xAxis": true,
+            "yAxis": true,
+            "formatters": [],
+            "hideColumns": [],
+            "tooltip": true,
+            "colors": ['#3498db','#f1c40f','#f03b20'],
+            "columns": [
+                "Education",
+                "Family Responsibilities Are A Barrier"
+            ],
+            "source": 267
+        }
+        popily.chart.getAndRender('#chart-6', options);
+    </script>
+
+    <script>
+        var options = {
+            "title": "Family Responsibilities Are A Barrier By Education",
+            "height": 400,
+            "includeAnalysis": true,
+            "includeDescription": false,
+            "chartType": "barGrouped",
+            "xLabel": "",
+            "yLabel": "Respondents",
+            "titleFontColor": "#fff",
+            "chartFontColor": "#fff",
+            "yGrid": false,
+            "rotated": true,
+            "skipAnimation": false,
+            "legend": true,
+            "xRotation": 0,
+            "xAxis": true,
+            "yAxis": true,
+            "formatters": [],
+            "hideColumns": [],
+            "tooltip": true,
+            "colors": ['#3498db','#f1c40f','#f03b20'],
+            "columns": [
+                "Education",
+                "Family Responsibilities Are A Barrier"
+            ],
+            "source": 267
+        }
+        popily.chart.getAndRender('#chart-6', options);
+    </script>
+
+    <script>
+        var options = {
+            "title": "Believe Lack Of Experience Or Skills Is A Barrier",
+            "height": '200px',
+            "includeAnalysis": false,
+            "includeDescription": false,
+            "rotated": false,
+            "chartType": "bar",
+            "xLabel": " ",
+            "yLabel": "Percentage of Respondents",
+            "xColumn": "Country",
+            "titleFontColor": "#fff",
+            "chartFontColor": "#fff",
+            "yGrid": false,
+            "skipAnimation": false,
+            "legend": false,
+            "xRotation": 90,
+            "xAxis": true,
+
+            "yAxis": true,
+            "formatters": [],
+            "hideColumns": [],
+            "tooltip": true,
+            "colors": ['#3498db','#f1c40f','#f03b20'],
+            "columns": [
+                "Lack Of Experience Or Skills Is A Barrier",
+                "Country"
+            ],
+            "source": 267,
+            "calculations": [{
+                "column": "Lack Of Experience Or Skills Is A Barrier",
+                "calculation": "bottom"
+            }]
+        }
+        popily.chart.getAndRender('#chart-7', options);
+    </script>
+
+    <script>
+        var options = {
+            "title": "Believe Laws Against Women Working Are A Barrier",
+            "height": '200px',
+            "includeAnalysis": false,
+            "includeDescription": false,
+            "rotated": false,
+            "chartType": "bar",
+            "xLabel": " ",
+            "yLabel": "Percentage of Respondents",
+            "xColumn": "Country",
+            "titleFontColor": "#fff",
+            "chartFontColor": "#fff",
+            "yGrid": false,
+            "skipAnimation": false,
+            "legend": false,
+            "xRotation": 90,
+            "xAxis": true,
+
+            "yAxis": true,
+            "formatters": [],
+            "hideColumns": [],
+            "tooltip": true,
+            "colors": ['#3498db','#f1c40f','#f03b20'],
+            "columns": [
+                "Lack Of Experience Or Skills Is A Barrier",
+                "Country"
+            ],
+            "source": 267,
+            "calculations": [{
+                "column": "Laws Against Women Working Are A Barrier",
+                "calculation": "bottom"
+            }]
+        }
+        popily.chart.getAndRender('#chart-8', options);
+    </script>
+
+    <script>
+        var options = {
+            "title": "Believe Lack Of Experience Or Skills Is A Barrier By Gender",
+            "height": '200px',
+            "includeAnalysis": false,
+            "includeDescription": false,
+            "rotated": false,
+            "chartType": "bar",
+            "xLabel": " ",
+            "yLabel": "Percentage of Respondents",
+            "xColumn": "Country",
+            "titleFontColor": "#fff",
+            "chartFontColor": "#fff",
+            "yGrid": false,
+            "skipAnimation": false,
+            "legend": false,
+            "xRotation": 90,
+            "xAxis": true,
+
+            "yAxis": true,
+            "formatters": [],
+            "hideColumns": [],
+            "tooltip": true,
+            "colors": ['#3498db','#f1c40f','#f03b20'],
+            "columns": [
+                "Lack Of Experience Or Skills Is A Barrier",
+                "Gender"
+            ],
+            "source": 267,
+        }
+        popily.chart.getAndRender('#chart-9', options);
+    </script>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')
+    </script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+
+</html>

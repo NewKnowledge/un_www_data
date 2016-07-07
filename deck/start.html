@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+
+  <title>New Knowledge</title>
+  <!-- Bootstrap core CSS -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+  <!-- Required stylesheet -->
+  <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+  <!-- Extension CSS files go here. Remove or add as needed. -->
+  <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+  <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+  <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+  <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/style/newknowledge.css">
+
+  <link href="popily/popily.css" rel="stylesheet" />
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+  <!-- Basic black and white print styles -->
+  <link rel="stylesheet" media="print" href="core/print.css">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+
+
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+
+  <!-- Required Modernizr file -->
+  <script src="modernizr.custom.js"></script>
+</head>
+<body>
+    <header class="topbar">
+        <img class="logo-white" src="images/logo-white.svg" />
+    </header>
+  <div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="bg-img02 slide">
+        <div class="vcenter">
+            <img class="logo-white" src="images/logo-black.svg" width="600px"/>
+            <h2 class="mb-60">U-Report & Womens Poll</h2>
+        </div>
+    </section>
+
+    <section class="bg-img04 slide">
+        <div class="vcenter">
+            <h1>U-Report Data</h1>
+        </div>
+    </section>
+
+    <section class="bg-img04 slide">
+        <div class="vcenter">
+            <h2>Barriers To Women</h2>
+        </div>
+    </section>
+
+    <section class="bg-img01 slide">
+          <div id="chart-1" class="chart vcenter">
+          </div>
+    </section>
+
+    <section class="bg-img20 slide">
+          <div id="chart-2" class="chart vcenter">
+          </div>
+    </section>
+
+    <section class="bg-img17 slide">
+          <div id="chart-3" class="chart vcenter">
+          </div>
+    </section>
+
+    <section class="bg-img16 slide">
+          <div id="chart-4" class="chart vcenter">
+          </div>
+    </section>
+
+    <section class="bg-img15 slide">
+          <div id="chart-5" class="chart vcenter">
+          </div>
+    </section>
+
+    <section class="bg-img06 slide">
+          <div id="chart-6" class="chart vcenter">
+          </div>
+    </section>
+
+    <section class="bg-img07 slide">
+          <div id="chart-7" class="chart vcenter">
+          </div>
+    </section>
+
+    <section class="bg-img04 slide">
+        <div class="vcenter">
+            <h2>Support To Women</h2>
+        </div>
+    </section>
+
+    <section class="bg-img08 slide">
+          <div id="chart-8" class="chart vcenter">
+          </div>
+    </section>
+
+    <section class="bg-img09 slide">
+          <div id="chart-9" class="chart vcenter">
+          </div>
+    </section>
+
+    <section class="bg-img10 slide">
+          <div id="chart-10" class="chart vcenter">
+          </div>
+    </section>
+
+    <section class="bg-img11 slide">
+          <div id="chart-12" class="chart vcenter">
+          </div>
+    </section>
+
+    <section class="bg-img11 slide">
+          <div id="chart-13" class="chart vcenter">
+          </div>
+    </section>
+
+    <section class="bg-img11 slide">
+          <div id="chart-14" class="chart vcenter">
+          </div>
+    </section>
+
+    <section class="bg-img04 slide">
+        <div class="vcenter">
+            <h2>Belief In Pay Equity</h2>
+        </div>
+    </section>
+
+    <section class="bg-img11 slide">
+          <div id="chart-15" class="chart vcenter">
+          </div>
+    </section>
+
+    <section class="bg-img11 slide">
+          <div id="chart-16" class="chart vcenter">
+          </div>
+    </section>
+
+    <section class="bg-img11 slide">
+          <div id="chart-17" class="chart vcenter">
+          </div>
+    </section>
+
+    <section class="bg-img11 slide">
+          <div id="chart-18" class="chart vcenter">
+          </div>
+    </section>
+
+    <section class="bg-img11 slide">
+          <div id="chart-19" class="chart vcenter">
+          </div>
+    </section>
+
+    <section class="bg-img11 slide">
+          <div id="chart-20" class="chart vcenter">
+          </div>
+    </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+      <span class="deck-status-current"></span>
+      /
+      <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+      <label for="goto-slide">Go to slide:</label>
+      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+      <datalist id="goto-datalist"></datalist>
+      <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+  </div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<script type="text/javascript" src="popily/popily.js"></script>
+<script type="text/javascript" src="popily/popily-geo.js"></script>
+
+<script>
+    popily.api.setToken('f2f877f72ff511319fda3e1884a0df256b2eebf4');
+</script>
+
+<script>
+    popily.api.setURL('https://staging.popily.com')
+</script>
+
+<script>
+    var options = {
+        "title": "<h2>Believe Fear Of Violence Is A Barrier</h2>",
+        "height": '',
+        "includeAnalysis": false,
+        "includeDescription": false,
+        "rotated": false,
+        "chartType": "bar",
+        "xLabel": " ",
+        "yLabel": "Percentage of Respondents",
+        "xColumn": "Country",
+        "titleFontColor": "#333",
+        "chartFontColor": "#333",
+        "yGrid": false,
+        "skipAnimation": false,
+        "legend": false,
+        "xRotation": 45,
+        "xAxis": true,
+        "chartFontSize": "14px",
+        "yAxis": true,
+        "formatters": [],
+        "hideColumns": [],
+        "tooltip": true,
+        "colors": [
+            "#007FFF",
+            "#5DA5DA",
+            "#FAA43A",
+            "#60BD68",
+            "#F17CB0",
+            "#B2912F",
+            "#B276B2",
+            "#DECF3F",
+            "#F15854"
+        ],
+        "columns": [
+            "Fear Of Violence Is A Barrier",
+            "Country"
+        ],
+        "source": 262,
+        "calculations": [{
+            "column": "Fear Of Violence Is A Barrier",
+            "calculation": "bottom"
+        }]
+    }
+    popily.chart.getAndRender('#chart-1', options);
+</script>
+
+<script>
+    var options = {
+        "title": "<h2>Believe Laws Against Women Working Is A Barrier</h2>",
+        "height": '',
+        "includeAnalysis": false,
+        "includeDescription": false,
+        "rotated": false,
+        "chartType": "bar",
+        "xLabel": " ",
+        "yLabel": "Percentage of Respondents",
+        "xColumn": "Country",
+        "titleFontColor": "#333",
+        "chartFontColor": "#333",
+        "yGrid": false,
+        "skipAnimation": false,
+        "legend": false,
+        "xRotation": 45,
+        "xAxis": true,
+        "chartFontSize": "14px",
+        "yAxis": true,
+        "formatters": [],
+        "hideColumns": [],
+        "tooltip": true,
+        "colors": [
+            "#007FFF",
+            "#5DA5DA",
+            "#FAA43A",
+            "#60BD68",
+            "#F17CB0",
+            "#B2912F",
+            "#B276B2",
+            "#DECF3F",
+            "#F15854"
+        ],
+        "columns": [
+            "Laws Against Women Working Is A Barrier",
+            "Country"
+        ],
+        "source": 262,
+        "calculations": [{
+            "column": "Laws Against Women Working Is A Barrier",
+            "calculation": "bottom"
+        }]
+    }
+    popily.chart.getAndRender('#chart-2', options);
+</script>
+
+<script>
+    var options = {
+        "title": "<h2>Believe Family Responsibilities Are A Barrier</h2>",
+        "height": '',
+        "includeAnalysis": false,
+        "includeDescription": false,
+        "rotated": false,
+        "chartType": "bar",
+        "xLabel": " ",
+        "yLabel": "Percentage of Respondents",
+        "xColumn": "Country",
+        "titleFontColor": "#333",
+        "chartFontColor": "#333",
+        "yGrid": false,
+        "skipAnimation": false,
+        "legend": false,
+        "xRotation": 45,
+        "xAxis": true,
+        "chartFontSize": "14px",
+        "yAxis": true,
+        "formatters": [],
+        "hideColumns": [],
+        "tooltip": true,
+        "colors": [
+            "#007FFF",
+            "#5DA5DA",
+            "#FAA43A",
+            "#60BD68",
+            "#F17CB0",
+            "#B2912F",
+            "#B276B2",
+            "#DECF3F",
+            "#F15854"
+        ],
+        "columns": [
+            "Family Responsibilities Are A Barrier",
+            "Country"
+        ],
+        "source": 262,
+        "calculations": [{
+            "column": "Family Responsibilities Are A Barrier",
+            "calculation": "bottom"
+        }]
+    }
+    popily.chart.getAndRender('#chart-3', options);
+</script>
+
+<script>
+    var options = {
+        "title": "<h2>Believe Lack Of Experience Or Skills Is A Barrier</h2>",
+        "height": '',
+        "includeAnalysis": false,
+        "includeDescription": false,
+        "rotated": false,
+        "chartType": "bar",
+        "xLabel": " ",
+        "yLabel": "Percentage of Respondents",
+        "xColumn": "Country",
+        "titleFontColor": "#333",
+        "chartFontColor": "#333",
+        "yGrid": false,
+        "skipAnimation": false,
+        "legend": false,
+        "xRotation": 45,
+        "xAxis": true,
+        "chartFontSize": "14px",
+        "yAxis": true,
+        "formatters": [],
+        "hideColumns": [],
+        "tooltip": true,
+        "colors": [
+            "#007FFF",
+            "#5DA5DA",
+            "#FAA43A",
+            "#60BD68",
+            "#F17CB0",
+            "#B2912F",
+            "#B276B2",
+            "#DECF3F",
+            "#F15854"
+        ],
+        "columns": [
+            "Lack Of Experience Or Skills Is A Barrier",
+            "Country"
+        ],
+        "source": 262,
+        "calculations": [{
+            "column": "Lack Of Experience Or Skills Is A Barrier",
+            "calculation": "bottom"
+        }]
+    }
+    popily.chart.getAndRender('#chart-4', options);
+</script>
+
+<script>
+    var options = {
+        "title": "<h2>Believe Traditional Views Of Women Are A Barrier</h2>",
+        "height": '',
+        "includeAnalysis": false,
+        "includeDescription": false,
+        "rotated": false,
+        "chartType": "bar",
+        "xLabel": " ",
+        "yLabel": "Percentage of Respondents",
+        "xColumn": "Country",
+        "titleFontColor": "#333",
+        "chartFontColor": "#333",
+        "yGrid": false,
+        "skipAnimation": false,
+        "legend": false,
+        "xRotation": 45,
+        "xAxis": true,
+        "chartFontSize": "14px",
+        "yAxis": true,
+        "formatters": [],
+        "hideColumns": [],
+        "tooltip": true,
+        "colors": [
+            "#007FFF",
+            "#5DA5DA",
+            "#FAA43A",
+            "#60BD68",
+            "#F17CB0",
+            "#B2912F",
+            "#B276B2",
+            "#DECF3F",
+            "#F15854"
+        ],
+        "columns": [
+            "Traditional Views Of Women Are A Barrier",
+            "Country"
+        ],
+        "source": 262,
+        "calculations": [{
+            "column": "Traditional Views Of Women Are A Barrier",
+            "calculation": "bottom"
+        }]
+    }
+    popily.chart.getAndRender('#chart-5', options);
+</script>
+
+<script>
+    var options = {
+        "title": "<h2>Believe Lack Of ICT Access Is A Barrier</h2>",
+        "height": '',
+        "includeAnalysis": false,
+        "includeDescription": false,
+        "rotated": false,
+        "chartType": "bar",
+        "xLabel": " ",
+        "yLabel": "Percentage of Respondents",
+        "xColumn": "Country",
+        "titleFontColor": "#333",
+        "chartFontColor": "#333",
+        "yGrid": false,
+        "skipAnimation": false,
+        "legend": false,
+        "xRotation": 45,
+        "xAxis": true,
+        "chartFontSize": "14px",
+        "yAxis": true,
+        "formatters": [],
+        "hideColumns": [],
+        "tooltip": true,
+        "colors": [
+            "#007FFF",
+            "#5DA5DA",
+            "#FAA43A",
+            "#60BD68",
+            "#F17CB0",
+            "#B2912F",
+            "#B276B2",
+            "#DECF3F",
+            "#F15854"
+        ],
+        "columns": [
+            "Lack Of ICT Access Is A Barrier",
+            "Country"
+        ],
+        "source": 262,
+        "calculations": [{
+            "column": "Lack Of ICT Access Is A Barrier",
+            "calculation": "bottom"
+        }]
+    }
+    popily.chart.getAndRender('#chart-6', options);
+</script>
+
+<script>
+    var options = {
+        "title": "<h2>Believe Other Things Are Barriers</h2>",
+        "height": '',
+        "includeAnalysis": false,
+        "includeDescription": false,
+        "rotated": false,
+        "chartType": "bar",
+        "xLabel": " ",
+        "yLabel": "Percentage of Respondents",
+        "xColumn": "Country",
+        "titleFontColor": "#333",
+        "chartFontColor": "#333",
+        "yGrid": false,
+        "skipAnimation": false,
+        "legend": false,
+        "xRotation": 45,
+        "xAxis": true,
+        "chartFontSize": "14px",
+        "yAxis": true,
+        "formatters": [],
+        "hideColumns": [],
+        "tooltip": true,
+        "colors": [
+            "#007FFF",
+            "#5DA5DA",
+            "#FAA43A",
+            "#60BD68",
+            "#F17CB0",
+            "#B2912F",
+            "#B276B2",
+            "#DECF3F",
+            "#F15854"
+        ],
+        "columns": [
+            "Other Things Are Barriers",
+            "Country"
+        ],
+        "source": 262,
+        "calculations": [{
+            "column": "Other Things Are Barriers",
+            "calculation": "bottom"
+        }]
+    }
+    popily.chart.getAndRender('#chart-7', options);
+</script>
+
+<script>
+    var options = {
+        "title": "<h2>Believe Education Helps Women</h2>",
+        "height": '',
+        "includeAnalysis": false,
+        "includeDescription": false,
+        "rotated": false,
+        "chartType": "bar",
+        "xLabel": " ",
+        "yLabel": "Percentage of Respondents",
+        "xColumn": "Country",
+        "titleFontColor": "#333",
+        "chartFontColor": "#333",
+        "yGrid": false,
+        "skipAnimation": false,
+        "legend": false,
+        "xRotation": 45,
+        "xAxis": true,
+        "chartFontSize": "14px",
+        "yAxis": true,
+        "formatters": [],
+        "hideColumns": [],
+        "tooltip": true,
+        "colors": [
+            "#007FFF",
+            "#5DA5DA",
+            "#FAA43A",
+            "#60BD68",
+            "#F17CB0",
+            "#B2912F",
+            "#B276B2",
+            "#DECF3F",
+            "#F15854"
+        ],
+        "columns": [
+            "Education Helps Women",
+            "Country"
+        ],
+        "source": 262,
+        "calculations": [{
+            "column": "Education Helps Women",
+            "calculation": "bottom"
+        }]
+    }
+    popily.chart.getAndRender('#chart-8', options);
+</script>
+
+<script>
+    var options = {
+        "title": "<h2>Believe Role Models Help Women</h2>",
+        "height": '',
+        "includeAnalysis": false,
+        "includeDescription": false,
+        "rotated": false,
+        "chartType": "bar",
+        "xLabel": " ",
+        "yLabel": "Percentage of Respondents",
+        "xColumn": "Country",
+        "titleFontColor": "#333",
+        "chartFontColor": "#333",
+        "yGrid": false,
+        "skipAnimation": false,
+        "legend": false,
+        "xRotation": 45,
+        "xAxis": true,
+        "chartFontSize": "14px",
+        "yAxis": true,
+        "formatters": [],
+        "hideColumns": [],
+        "tooltip": true,
+        "colors": [
+            "#007FFF",
+            "#5DA5DA",
+            "#FAA43A",
+            "#60BD68",
+            "#F17CB0",
+            "#B2912F",
+            "#B276B2",
+            "#DECF3F",
+            "#F15854"
+        ],
+        "columns": [
+            "Role Models Help Women",
+            "Country"
+        ],
+        "source": 262,
+        "calculations": [{
+            "column": "Role Models Help Women",
+            "calculation": "bottom"
+        }]
+    }
+    popily.chart.getAndRender('#chart-9', options);
+</script>
+
+<script>
+    var options = {
+        "title": "<h2>Believe Family Planning Helps Women</h2>",
+        "height": '',
+        "includeAnalysis": false,
+        "includeDescription": false,
+        "rotated": false,
+        "chartType": "bar",
+        "xLabel": " ",
+        "yLabel": "Percentage of Respondents",
+        "xColumn": "Country",
+        "titleFontColor": "#333",
+        "chartFontColor": "#333",
+        "yGrid": false,
+        "skipAnimation": false,
+        "legend": false,
+        "xRotation": 45,
+        "xAxis": true,
+        "chartFontSize": "14px",
+        "yAxis": true,
+        "formatters": [],
+        "hideColumns": [],
+        "tooltip": true,
+        "colors": [
+            "#007FFF",
+            "#5DA5DA",
+            "#FAA43A",
+            "#60BD68",
+            "#F17CB0",
+            "#B2912F",
+            "#B276B2",
+            "#DECF3F",
+            "#F15854"
+        ],
+        "columns": [
+            "Family Planning Helps Women",
+            "Country"
+        ],
+        "source": 262,
+        "calculations": [{
+            "column": "Family Planning Helps Women",
+            "calculation": "bottom"
+        }]
+    }
+    popily.chart.getAndRender('#chart-10', options);
+</script>
+
+<script>
+    var options = {
+        "title": "<h2>Believe Maternity Pay And Childcare Helps Women</h2>",
+        "height": '',
+        "includeAnalysis": false,
+        "includeDescription": false,
+        "rotated": false,
+        "chartType": "bar",
+        "xLabel": " ",
+        "yLabel": "Percentage of Respondents",
+        "xColumn": "Country",
+        "titleFontColor": "#333",
+        "chartFontColor": "#333",
+        "yGrid": false,
+        "skipAnimation": false,
+        "legend": false,
+        "xRotation": 45,
+        "xAxis": true,
+        "chartFontSize": "14px",
+        "yAxis": true,
+        "formatters": [],
+        "hideColumns": [],
+        "tooltip": true,
+        "colors": [
+            "#007FFF",
+            "#5DA5DA",
+            "#FAA43A",
+            "#60BD68",
+            "#F17CB0",
+            "#B2912F",
+            "#B276B2",
+            "#DECF3F",
+            "#F15854"
+        ],
+        "columns": [
+            "Maternity Pay And Childcare Helps Women",
+            "Country"
+        ],
+        "source": 262,
+        "calculations": [{
+            "column": "Maternity Pay And Childcare Helps Women",
+            "calculation": "bottom"
+        }]
+    }
+    popily.chart.getAndRender('#chart-11', options);
+</script>
+
+<script>
+    var options = {
+        "title": "<h2>Believe Access To Banking Helps Women</h2>",
+        "height": '',
+        "includeAnalysis": false,
+        "includeDescription": false,
+        "rotated": false,
+        "chartType": "bar",
+        "xLabel": " ",
+        "yLabel": "Percentage of Respondents",
+        "xColumn": "Country",
+        "titleFontColor": "#333",
+        "chartFontColor": "#333",
+        "yGrid": false,
+        "skipAnimation": false,
+        "legend": false,
+        "xRotation": 45,
+        "xAxis": true,
+        "chartFontSize": "14px",
+        "yAxis": true,
+        "formatters": [],
+        "hideColumns": [],
+        "tooltip": true,
+        "colors": [
+            "#007FFF",
+            "#5DA5DA",
+            "#FAA43A",
+            "#60BD68",
+            "#F17CB0",
+            "#B2912F",
+            "#B276B2",
+            "#DECF3F",
+            "#F15854"
+        ],
+        "columns": [
+            "Access To Banking Helps Women",
+            "Country"
+        ],
+        "source": 262,
+        "calculations": [{
+            "column": "Access To Banking Helps Women",
+            "calculation": "bottom"
+        }]
+    }
+    popily.chart.getAndRender('#chart-12', options);
+</script>
+
+<script>
+    var options = {
+        "title": "<h2>Believe Womens Groups And Charities Helps Women</h2>",
+        "height": '',
+        "includeAnalysis": false,
+        "includeDescription": false,
+        "rotated": false,
+        "chartType": "bar",
+        "xLabel": " ",
+        "yLabel": "Percentage of Respondents",
+        "xColumn": "Country",
+        "titleFontColor": "#333",
+        "chartFontColor": "#333",
+        "yGrid": false,
+        "skipAnimation": false,
+        "legend": false,
+        "xRotation": 45,
+        "xAxis": true,
+        "chartFontSize": "14px",
+        "yAxis": true,
+        "formatters": [],
+        "hideColumns": [],
+        "tooltip": true,
+        "colors": [
+            "#007FFF",
+            "#5DA5DA",
+            "#FAA43A",
+            "#60BD68",
+            "#F17CB0",
+            "#B2912F",
+            "#B276B2",
+            "#DECF3F",
+            "#F15854"
+        ],
+        "columns": [
+            "Womens Groups And Charities Helps Women",
+            "Country"
+        ],
+        "source": 262,
+        "calculations": [{
+            "column": "Womens Groups And Charities Helps Women",
+            "calculation": "bottom"
+        }]
+    }
+    popily.chart.getAndRender('#chart-13', options);
+</script>
+
+<script>
+    var options = {
+        "title": "<h2>Believe Other Things Help Women</h2>",
+        "height": '',
+        "includeAnalysis": false,
+        "includeDescription": false,
+        "rotated": false,
+        "chartType": "bar",
+        "xLabel": " ",
+        "yLabel": "Percentage of Respondents",
+        "xColumn": "Country",
+        "titleFontColor": "#333",
+        "chartFontColor": "#333",
+        "yGrid": false,
+        "skipAnimation": false,
+        "legend": false,
+        "xRotation": 45,
+        "xAxis": true,
+        "chartFontSize": "14px",
+        "yAxis": true,
+        "formatters": [],
+        "hideColumns": [],
+        "tooltip": true,
+        "colors": [
+            "#007FFF",
+            "#5DA5DA",
+            "#FAA43A",
+            "#60BD68",
+            "#F17CB0",
+            "#B2912F",
+            "#B276B2",
+            "#DECF3F",
+            "#F15854"
+        ],
+        "columns": [
+            "Other Things Help Women",
+            "Country"
+        ],
+        "source": 262,
+        "calculations": [{
+            "column": "Other Things Help Women",
+            "calculation": "bottom"
+        }]
+    }
+    popily.chart.getAndRender('#chart-14', options);
+</script>
+
+<script>
+    var options = {
+        "title": "<h2>Believes In Pay Equity</h2>",
+        "height": '',
+        "includeAnalysis": false,
+        "includeDescription": false,
+        "rotated": false,
+        "chartType": "bar",
+        "xLabel": " ",
+        "yLabel": "Percentage of Respondents",
+        "xColumn": "Country",
+        "titleFontColor": "#333",
+        "chartFontColor": "#333",
+        "yGrid": false,
+        "skipAnimation": false,
+        "legend": false,
+        "xRotation": 45,
+        "xAxis": true,
+        "chartFontSize": "14px",
+        "yAxis": true,
+        "formatters": [],
+        "hideColumns": [],
+        "tooltip": true,
+        "colors": [
+            "#007FFF",
+            "#5DA5DA",
+            "#FAA43A",
+            "#60BD68",
+            "#F17CB0",
+            "#B2912F",
+            "#B276B2",
+            "#DECF3F",
+            "#F15854"
+        ],
+        "columns": [
+            "Believes In Pay Equity",
+            "Country"
+        ],
+        "source": 262,
+        "calculations": [{
+            "column": "Believes In Pay Equity",
+            "calculation": "bottom"
+        }]
+    }
+    popily.chart.getAndRender('#chart-15', options);
+</script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+  $(function() {
+    $.deck('.slide');
+  });
+</script>
+</body>
+</html>
