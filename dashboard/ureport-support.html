@@ -103,6 +103,21 @@
         <!-- Start Row -->
         <div class='row'>
             <!-- Start Chart -->
+            <div class='col-sm-12'>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div id="chart-20">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Chart -->
+        </div>
+        <!-- End Row -->
+
+        <!-- Start Row -->
+        <div class='row'>
+            <!-- Start Chart -->
             <div class='col-sm-4'>
                 <div class="panel panel-default">
                     <div class="panel-body">
@@ -477,9 +492,41 @@
         popily.chart.getAndRender('#chart-14', options);
     </script>
 
-
-
-
+    <script>
+        var options = {
+            "title": "Actions Aggregated Globally",
+            "height": 500,
+            "includeAnalysis": false,
+            "includeDescription": false,
+            "rotated": false,
+            "chartType": "bar",
+            "yGrid": true,
+            "yLabel": "Average Percent Of Respondents",
+            "skipAnimation": false,
+            "legend": false,
+            "xRotation": 90,
+            "xAxis": true,
+            "yAxis": true,
+            "formatters": [],
+            "hideColumns": [],
+            "tooltip": true,
+            "titleFontColor": "#fff",
+            "chartFontColor": "#fff",
+            "colors": [
+                "#f1c40f"
+            ],
+            "columns": [
+                "Action",
+                "Average Percent Agreed"
+            ],
+            "source": 282,
+            "calculations": [{
+                "column": "Average Percent Agreed",
+                "calculation": "bottom"
+            }]
+        }
+        popily.chart.getAndRender('#chart-20', options);
+    </script>
 
 
     <!-- Bootstrap core JavaScript

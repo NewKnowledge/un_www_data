@@ -190,6 +190,52 @@
         </div>
         <!-- End Row -->
 
+        <div class='row'>
+        <!-- Start Chart -->
+        <div class='col-sm-6'>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div id="chart-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Chart -->
+
+        <!-- Start Chart -->
+        <div class='col-sm-6'>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div id="chart-101">
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>        <!-- Start Chart -->
+
+<div class='row'>
+        <!-- Start Chart -->
+        <div class='col-sm-6'>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div id="chart-102">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Chart -->
+
+        <!-- Start Chart -->
+        <div class='col-sm-6'>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div id="chart-103">
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>        <!-- Start Chart -->
+
     </div>
     <!-- /container -->
 
@@ -476,6 +522,192 @@
         }
         popily.chart.getAndRender('#chart-34', options);
     </script>
+
+
+    <script>
+    var options = {
+     "title": "Ranked Actions For Very High Income Countries",
+     "height": "550",
+     "includeAnalysis": false,
+     "includeDescription": false,
+     "rotated": false,
+     "chartType": "bar",
+     "chartFontColor": "#fff",
+     "yGrid": false,
+     "skipAnimation": false,
+     "legend": false,
+     "xRotation": 90,
+     "yLabel": "Percentage Of Respondents",
+     "xAxis": true,
+     "yAxis": true,
+     "formatters": [],
+     "hideColumns": [],
+     "tooltip": true,
+     "colors": [
+      "#5DA5DA",
+      "#FAA43A",
+      "#60BD68",
+      "#F17CB0",
+      "#B2912F",
+      "#B276B2",
+      "#DECF3F",
+      "#F15854"
+     ],
+     "columns": [
+      "Very High",
+      "Actions"
+     ],
+     "source": 291,
+     "calculations": [
+      {
+       "column": "Very High",
+       "calculation": "bottom"
+      }
+     ]
+    }
+    popily.chart.getAndRender('#chart-100', options);
+    </script>
+
+    <script>
+    var options = {
+     "title": "Ranked Actions For High Income Countries",
+     "height": "550",
+     "includeAnalysis": false,
+     "includeDescription": false,
+     "rotated": false,
+     "chartType": "bar",
+     "chartFontColor": "#fff",
+     "yGrid": false,
+     "skipAnimation": false,
+     "legend": false,
+     "xRotation": 90,
+     "yLabel": "Percentage Of Respondents",
+     "xAxis": true,
+     "yAxis": true,
+     "formatters": [],
+     "hideColumns": [],
+     "tooltip": true,
+     "colors": [
+      "#5DA5DA",
+      "#FAA43A",
+      "#60BD68",
+      "#F17CB0",
+      "#B2912F",
+      "#B276B2",
+      "#DECF3F",
+      "#F15854"
+     ],
+     "columns": [
+      "High",
+      "Actions"
+     ],
+     "source": 291,
+     "calculations": [
+      {
+       "column": "High",
+       "calculation": "bottom"
+      }
+     ]
+    }
+    popily.chart.getAndRender('#chart-101', options);
+    </script>
+
+    <script>
+    var options = {
+     "title": "Ranked Actions For Medium Income Countries",
+     "height": "550",
+     "includeAnalysis": false,
+     "includeDescription": false,
+     "rotated": false,
+     "chartType": "bar",
+     "chartFontColor": "#fff",
+     "yGrid": false,
+     "skipAnimation": false,
+     "legend": false,
+     "xRotation": 90,
+     "yLabel": "Percentage Of Respondents",
+     "xAxis": true,
+     "yAxis": true,
+     "formatters": [],
+     "hideColumns": [],
+     "tooltip": true,
+     "colors": [
+      "#5DA5DA",
+      "#FAA43A",
+      "#60BD68",
+      "#F17CB0",
+      "#B2912F",
+      "#B276B2",
+      "#DECF3F",
+      "#F15854"
+     ],
+     "columns": [
+      "Middle",
+      "Actions"
+     ],
+     "source": 291,
+     "calculations": [
+      {
+       "column": "Middle",
+       "calculation": "bottom"
+      },
+      {
+       "column": "Middle",
+       "calculation": "bottom"
+      }
+     ]
+    }
+    popily.chart.getAndRender('#chart-102', options);
+    </script>
+
+    <script>
+    var options = {
+     "title": "Ranked Actions For Low Income Countries",
+     "height": "550",
+     "includeAnalysis": false,
+     "includeDescription": false,
+     "rotated": false,
+     "chartType": "bar",
+     "chartFontColor": "#fff",
+     "yGrid": false,
+     "skipAnimation": false,
+     "legend": false,
+     "xRotation": 90,
+     "yLabel": "Percentage Of Respondents",
+     "xAxis": true,
+     "yAxis": true,
+     "formatters": [],
+     "hideColumns": [],
+     "tooltip": true,
+     "colors": [
+      "#5DA5DA",
+      "#FAA43A",
+      "#60BD68",
+      "#F17CB0",
+      "#B2912F",
+      "#B276B2",
+      "#DECF3F",
+      "#F15854"
+     ],
+     "columns": [
+      "Actions",
+      "Low"
+     ],
+     "source": 291,
+     "calculations": [
+      {
+       "column": "Low",
+       "calculation": "bottom"
+      },
+      {
+       "column": "Low",
+       "calculation": "bottom"
+      }
+     ]
+    }
+    popily.chart.getAndRender('#chart-103', options);
+    </script>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
